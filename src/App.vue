@@ -4,7 +4,13 @@
     <img src="./assets/logo.png" alt="Logo" class="logo"/>
     <img src="./assets/second-logo.png" alt="Second Logo" class="floating-logo" />
     <h1 class="brand-text">COFFEE HEAVEN</h1>
-    <p>Crafting the perfect brew for your daily escape. Experience the rich aroma of hand-picked beans, roasted to perfection in every single cup.</p>
+    <p class="description-text">
+      Crafting the perfect brew for your daily escape. Experience the rich aroma
+      of hand-picked beans, roasted to perfection in every single cup.
+    </p>
+    <button class="btn-shop">
+      SHOP HERE
+    </button>
   </header>
 </template>
 <style>
@@ -25,6 +31,57 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.btn-shop {
+  /* Positioning - Adjust these to match your description text */
+  position: absolute;
+  top: 80%; /* Placed below your description text */
+  left: 73%;
+  transform: translate(-50%, -50%);
+
+  /* Desktop Dimensions & Shape */
+  width: 249px;
+  height: 75px;
+  border: 1px solid #ffffff;
+  border-radius: 10px; /* Using your inner-div requirement for the sharpest look */
+  background: transparent;
+
+  /* Typography */
+  font-family: "Marko One", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  /* Centering the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-shop:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  letter-spacing: 1px;
+}
+
+/* Mobile Version */
+@media (max-width: 768px) {
+  .btn-shop {
+    /* Mobile Positioning */
+    top: 86%; /* Adjusted to sit below mobile text at 81% */
+    left: 50%;
+    
+    /* Mobile Dimensions */
+    width: 98px;
+    height: 31px;
+    border-radius: 3px;
+    
+    /* Mobile Typography */
+    font-size: 12px;
+  }
+}
+
 .brand-text {
   font-family: 'Marko One';
   color: white;
@@ -34,6 +91,45 @@ body {
   top: 55%;
   left: 62%;
   transform: translateY(-50%);
+}
+
+.description-text {
+  position: absolute;
+  top: 64%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  
+  /* Typography */
+  font-family: "Marko One", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.6; /* Adds nice breathing room between the two lines */
+
+  /* The "Two-Row" Magic */
+  width: 550px;      /* Adjust this value until it snaps to exactly 2 lines */
+  max-width: 90vw;   /* Prevents it from being wider than the screen */
+}
+
+/* ... keep your desktop .description-text styles from before ... */
+
+/* Responsive Mobile Code */
+@media (max-width: 768px) {
+  .description-text {
+    /* Vertical positioning requirement */
+    top: 78%; 
+    left: 50%; /* Center it horizontally for better mobile balance */
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    /* Force two rows on mobile */
+    width: 290px;      /* Fixed width ensures it wraps into two lines on most phones */
+    max-width: 95vw;   /* Safety net for very small screens */
+    
+    font-size: 13px;   /* Smaller font helps fit more words per line */
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 768px) {
