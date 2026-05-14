@@ -1,100 +1,166 @@
 <template>
-  <header class="hero">
-    
-    <img src="./assets/logo.png" alt="Logo" class="logo"/>
-    <img src="./assets/second-logo.png" alt="Second Logo" class="floating-logo" />
-    <h1 class="brand-text">COFFEE HEAVEN</h1>
-    <p class="description-text">
-      Crafting the perfect brew for your daily escape. Experience the rich aroma
-      of hand-picked beans, roasted to perfection in every single cup.
-    </p>
-    <button class="btn-shop">
-      SHOP HERE
-    </button>
-      <Navbar />
+  <div class="main-layout">
+    <!-- Hero Section -->
+    <header class="hero">
+      <img src="./assets/logo.png" alt="Logo" class="logo"/>
+      <img src="./assets/second-logo.png" alt="Second Logo" class="floating-logo" />
 
-      <HeroSection />
-  </header>
+      <h1 class="brand-text">COFFEE HEAVEN</h1>
+      <p class="description-text">
+        Crafting the perfect brew for your daily escape.
+        Experience the rich aroma of hand-picked beans,
+        roasted to perfection in every single cup.
+      </p>
+
+      <button class="btn-shop">SHOP HERE</button>
+
+      <Navbar />
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+      <OfferSection />
+
+      <!-- Integrated Coffee Herald Section -->
+      <section class="w-full bg-[#f2e8da] py-12 px-6">
+        <div class="w-full flex justify-center pt-12">
+          <span class="font-inter font-bold text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[40px] text-black">
+            THE COFFEE HERALD
+          </span>
+        </div>
+        
+        <div class="w-full flex justify-center pt-10 mb-12">
+          <p class="text-[12px] sm:text-[14px] md:text-[18px] text-gray-800 text-center max-w-[600px] leading-relaxed">
+            The Coffee Herald is a curated collection of fine beans and roasting traditions.
+          </p>
+        </div>
+
+        <!-- 3 Images, Descriptions, and Read Mores Grid -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+          
+          <!-- Column 1: New Technology -->
+          <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <img src="./assets/img-1.jpg" alt="New Technology" class="w-full h-auto object-cover mb-6 shadow-sm" />
+            <h3 class="font-inter font-bold text-lg mb-3 tracking-tight text-black">NEW TECHNOLOGY</h3>
+            <p class="text-black text-sm leading-relaxed mb-4">
+              Exploring the latest innovations in precision roasting and automated brewing to ensure every bean reaches its maximum flavor potential.
+            </p>
+            <a href="#" class="font-bold text-xs uppercase tracking-widest border-b border-black pb-1 hover:text-gray-600 transition-colors">
+              READ MORE >
+            </a>
+          </div>
+
+          <!-- Column 2: Friendly Staff -->
+          <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <img src="./assets/img-2.jpg" alt="Friendly Staff" class="w-full h-auto object-cover mb-6 shadow-sm" />
+            <h3 class="font-inter font-bold text-lg mb-3 tracking-tight text-black">FRIENDLY STAFF</h3>
+            <p class="text-black text-sm leading-relaxed mb-4">
+              Our expert baristas are dedicated to more than just making coffee; they are here to share the story behind every cup we serve.
+            </p>
+            <a href="#" class="font-bold text-xs uppercase tracking-widest border-b border-black pb-1 hover:text-gray-600 transition-colors">
+              READ MORE >
+            </a>
+          </div>
+
+          <!-- Column 3: Delicious Coffees -->
+          <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <img src="./assets/img-3.jpg" alt="Delicious Coffees" class="w-full h-auto object-cover mb-6 shadow-sm" />\
+            <h3 class="font-inter font-bold text-lg mb-3 tracking-tight text-black">DELICIOUS COFFEES</h3>
+            <p class="text-black text-sm leading-relaxed mb-4">
+              Discover our seasonal blends and single-origin selections, hand-picked from the finest high-altitude plantations across the globe.
+            </p>
+            <a href="#" class="font-bold text-xs uppercase tracking-widest border-b border-black pb-1 hover:text-gray-600 transition-colors">
+              READ MORE >
+            </a>
+          </div>
+
+        </div>
+      </section>
+      <section class="w-full">
+      <!-- Desktop Image: Visible on md screens and up (Screenshot 2026-05-14 154637.jpg) -->
+        <img 
+          src="./assets/banner-desktop.jpg" 
+          alt="Coffee Banner Desktop" 
+          class="hidden md:block w-full h-auto object-cover"
+        />
+
+      <!-- Mobile Image: Visible only on small screens (Screenshot 2026-05-14 154649.jpg) -->
+        <img 
+          src="./assets/banner-mobile.png" 
+          alt="Coffee Banner Mobile" 
+          class="block md:hidden w-full h-auto object-cover"
+        />
+    </section>
+    </main>
+  </div> 
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import OfferSection from "./components/OfferSection.vue";
 
 export default {
   components: {
     Navbar,
+    OfferSection,
   },
 };
 </script>
 
 <style>
+/* 1. Global Resets */
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
 
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* 2. Hero Section Adjustments */
 .hero {
   width: 100%;
-  height: 120vh;
-
+  /* Force a minimum height so the section exists in the document flow */
+  height: 120vh; 
   background-image: url('./assets/hero.jpg');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative; /* This is the anchor for your absolute items */
 }
 
-.btn-shop {
-  /* Positioning - Adjust these to match your description text */
+/* 3. The "Content Area" Fix */
+.content-area {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff; /* Ensures the hero image doesn't bleed through */
+  z-index: 5; /* Keeps it above the hero background */
+}
+
+/* Desktop absolute positions */
+.logo {
   position: absolute;
-  top: 80%; /* Placed below your description text */
+  top: 20px;
+  left: 20px;
+  width: 240px;
+  height: auto;
+  z-index: 10;
+}
+
+.floating-logo {
+  position: absolute;
+  top: 43%;
   left: 73%;
   transform: translate(-50%, -50%);
-
-  /* Desktop Dimensions & Shape */
-  width: 249px;
-  height: 75px;
-  border: 1px solid #ffffff;
-  border-radius: 10px; /* Using your inner-div requirement for the sharpest look */
-  background: transparent;
-
-  /* Typography */
-  font-family: "Marko One", serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  
-  /* Centering the text */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn-shop:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  letter-spacing: 1px;
-}
-
-/* Mobile Version */
-@media (max-width: 768px) {
-  .btn-shop {
-    /* Mobile Positioning */
-    top: 86%; /* Adjusted to sit below mobile text at 81% */
-    left: 50%;
-    
-    /* Mobile Dimensions */
-    width: 98px;
-    height: 31px;
-    border-radius: 3px;
-    
-    /* Mobile Typography */
-    font-size: 12px;
-  }
+  height: 125px;
 }
 
 .brand-text {
@@ -113,113 +179,75 @@ body {
   top: 64%;
   left: 73%;
   transform: translate(-50%, -50%);
-  
-  /* Typography */
   font-family: "Marko One", serif;
   font-size: 16px;
-  font-weight: 400;
   color: #ffffff;
   text-align: center;
-  line-height: 1.6; /* Adds nice breathing room between the two lines */
-
-  /* The "Two-Row" Magic */
-  width: 550px;      /* Adjust this value until it snaps to exactly 2 lines */
-  max-width: 90vw;   /* Prevents it from being wider than the screen */
+  width: 550px;
 }
 
-/* ... keep your desktop .description-text styles from before ... */
-
-/* Responsive Mobile Code */
-@media (max-width: 768px) {
-  .description-text {
-    /* Vertical positioning requirement */
-    top: 78%; 
-    left: 50%; /* Center it horizontally for better mobile balance */
-    transform: translate(-50%, -50%);
-    position: absolute;
-
-    /* Force two rows on mobile */
-    width: 290px;      /* Fixed width ensures it wraps into two lines on most phones */
-    max-width: 95vw;   /* Safety net for very small screens */
-    
-    font-size: 13px;   /* Smaller font helps fit more words per line */
-    line-height: 1.4;
-  }
+.btn-shop {
+  position: absolute;
+  top: 80%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  width: 249px;
+  height: 75px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background: transparent;
+  font-family: "Marko One", serif;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
 }
 
+/* --- 4. Mobile Version Fixes --- */
 @media (max-width: 768px) {
   .hero {
-    height: 100vh;
-    background-image: url('./assets/hero-mobile.jpg'); 
+    height: 100vh; /* Adjust hero height for mobile screens */
+    background-image: url('./assets/hero-mobile.jpg');
     background-position: center;
   }
-}
-.logo {
-  position: absolute; 
-  top: 20px;          
-  left: 20px;         
-  z-index: 10;
 
-  width: 240px;       
-  height: auto;      
-}
-.floating-logo {
-  position: absolute;
-  top: 43%;     
-  left: 73%;    
-  transform: translate(-50%, -50%);
-  height: 125px;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    height: 100vh; /* Adjust height to fill the mobile screen like the photo */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Main "Corretto" Logo */
+  /* Center the absolute elements horizontally on mobile */
   .logo {
-    position: absolute;
-    top: 40px;      /* Adjust based on the gap in your photo */
-    left: 50%;      /* Move to horizontal center */
-    transform: translateX(-50%); 
-    width: 180px;   /* Size it to match the mobile view */
-  }
-
-  /* Circular "Retrobrand" Symbol */
-  .floating-logo {
-    position: absolute;
-    top: 145px;     /* Places it directly under the main logo */
-    left: 50%;      /* Move to horizontal center */
-    transform: translateX(-50%);
-    height: 120px;   /* Keep or slightly decrease size */
-  }
-  
-  /* Ensure the text starts lower down so it doesn't overlap logos */
-  .overlay {
-    margin-top: 250px; 
-    padding: 0 20px;
-  }
-
-  .overlay h1 {
-    font-size: 28px;
-    letter-spacing: 2px;
-  }
-  .brand-text {
-    position: absolute;
     left: 50%;
-    top : 70%; /* Positioned relative to the bottom of the hero */
-    transform: translateX(-50%); /* Centers it perfectly */
-    
-    /* 2. Typography */
-    font-family: 'Marko One';
-    font-size: 1.30rem; /* Larger size for readability */
-    text-transform: uppercase;
-    color: white; /* Ensure it's visible */
+    transform: translateX(-50%);
+    width: 180px;
+  }
+
+  .floating-logo {
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+  }
+
+  .brand-text {
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .description-text {
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 290px;
+    font-size: 13px;
+  }
+
+  .btn-shop {
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
   }
 }
-
-
 </style>
