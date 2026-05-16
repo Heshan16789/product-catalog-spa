@@ -30,14 +30,12 @@
         </div>
         
         <div class="w-full flex justify-center pt-10 mb-12">
-          <p class="text-[12px] sm:text-[14px] md:text-[18px] text-gray-800 text-center max-w-[600px] leading-relaxed">
+          <p class="text-[12px] sm:text-[14px] md:text-[18px] text-black text-center max-w-[600px] leading-relaxed">
             The Coffee Herald is a curated collection of fine beans and roasting traditions.
           </p>
         </div>
 
-        <!-- 3 Images, Descriptions, and Read Mores Grid -->
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-          
           <!-- Column 1: New Technology -->
           <div class="flex flex-col items-center md:items-start text-center md:text-left">
             <img src="./assets/img-1.jpg" alt="New Technology" class="w-full h-auto object-cover mb-6 shadow-sm" />
@@ -64,7 +62,7 @@
 
           <!-- Column 3: Delicious Coffees -->
           <div class="flex flex-col items-center md:items-start text-center md:text-left">
-            <img src="./assets/img-3.jpg" alt="Delicious Coffees" class="w-full h-auto object-cover mb-6 shadow-sm" />\
+            <img src="./assets/img-3.jpg" alt="Delicious Coffees" class="w-full h-auto object-cover mb-6 shadow-sm" />
             <h3 class="font-inter font-bold text-lg mb-3 tracking-tight text-black">DELICIOUS COFFEES</h3>
             <p class="text-black text-sm leading-relaxed mb-4">
               Discover our seasonal blends and single-origin selections, hand-picked from the finest high-altitude plantations across the globe.
@@ -73,24 +71,26 @@
               READ MORE >
             </a>
           </div>
-
         </div>
       </section>
+
+      <!-- Banner Section (Screenshot 2026-05-14 154637.jpg & Screenshot 2026-05-14 154649.jpg) -->
       <section class="w-full">
-      <!-- Desktop Image: Visible on md screens and up (Screenshot 2026-05-14 154637.jpg) -->
         <img 
           src="./assets/banner-desktop.jpg" 
           alt="Coffee Banner Desktop" 
           class="hidden md:block w-full h-auto object-cover"
         />
-
-      <!-- Mobile Image: Visible only on small screens (Screenshot 2026-05-14 154649.jpg) -->
         <img 
           src="./assets/banner-mobile.png" 
           alt="Coffee Banner Mobile" 
           class="block md:hidden w-full h-auto object-cover"
         />
-    </section>
+      </section>
+
+      <!-- NEW Stats/Blog Section (Screenshot 2026-05-14 165426.jpg & Screenshot 2026-05-14 165439.jpg) -->
+      <StatsSection />
+
     </main>
   </div> 
 </template>
@@ -98,11 +98,15 @@
 <script>
 import Navbar from "./components/Navbar.vue";
 import OfferSection from "./components/OfferSection.vue";
+// 1. Import the new component
+import StatsSection from "./components/StatsSection.vue";
 
 export default {
   components: {
     Navbar,
     OfferSection,
+    // 2. Register the component
+    StatsSection,
   },
 };
 </script>
