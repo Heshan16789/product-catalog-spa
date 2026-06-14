@@ -117,7 +117,7 @@ const products = [
     name: "Ethiopian Espresso",
     category: "Espresso",
     price: 3500,
-    image: new URL("../assets/coffee1.png", import.meta.url).href,
+    image: new URL("../assets/p1.png", import.meta.url).href,
   },
 
   {
@@ -125,7 +125,7 @@ const products = [
     name: "Dark Espresso",
     category: "Espresso",
     price: 4200,
-    image: new URL("../assets/coffee2.png", import.meta.url).href,
+    image: new URL("../assets/dark.jpg", import.meta.url).href,
   },
 
   {
@@ -133,7 +133,7 @@ const products = [
     name: "Italian Espresso",
     category: "Espresso",
     price: 4600,
-    image: new URL("../assets/coffee3.png", import.meta.url).href,
+    image: new URL("../assets/italian.jpg", import.meta.url).href,
   },
 
   {
@@ -141,7 +141,7 @@ const products = [
     name: "Classic Espresso Shot",
     category: "Espresso",
     price: 3900,
-    image: new URL("../assets/coffee4.png", import.meta.url).href,
+    image: new URL("../assets/classic.jpg", import.meta.url).href,
   },
 
   {
@@ -149,7 +149,7 @@ const products = [
     name: "Caramel Espresso",
     category: "Espresso",
     price: 4800,
-    image: new URL("../assets/coffee1.png", import.meta.url).href,
+    image: new URL("../assets/caramel.jpg", import.meta.url).href,
   },
 
   // LATTE
@@ -158,7 +158,7 @@ const products = [
     name: "Classic Latte",
     category: "Latte",
     price: 4100,
-    image: new URL("../assets/coffee2.png", import.meta.url).href,
+    image: new URL("../assets/classiclatte.jpg", import.meta.url).href,
   },
 
   {
@@ -166,7 +166,7 @@ const products = [
     name: "Vanilla Latte",
     category: "Latte",
     price: 4500,
-    image: new URL("../assets/coffee3.png", import.meta.url).href,
+    image: new URL("../assets/vanilla.webp", import.meta.url).href,
   },
 
   {
@@ -174,7 +174,7 @@ const products = [
     name: "Hazelnut Latte",
     category: "Latte",
     price: 4700,
-    image: new URL("../assets/coffee4.png", import.meta.url).href,
+    image: new URL("../assets/hazelnut.jpg", import.meta.url).href,
   },
 
   {
@@ -182,7 +182,7 @@ const products = [
     name: "Iced Latte",
     category: "Latte",
     price: 4300,
-    image: new URL("../assets/coffee1.png", import.meta.url).href,
+    image: new URL("../assets/icedlatte.webp", import.meta.url).href,
   },
 
   {
@@ -190,7 +190,7 @@ const products = [
     name: "Mocha Latte",
     category: "Latte",
     price: 5200,
-    image: new URL("../assets/coffee2.png", import.meta.url).href,
+    image: new URL("../assets/mochalatte.jpg", import.meta.url).href,
   },
 
   // COLD BREW
@@ -199,7 +199,7 @@ const products = [
     name: "Cold Brew Black",
     category: "Cold Brew",
     price: 3400,
-    image: new URL("../assets/coffee3.png", import.meta.url).href,
+    image: new URL("../assets/coldblack.jpg", import.meta.url).href,
   },
 
   {
@@ -207,7 +207,7 @@ const products = [
     name: "Iced Cold Brew",
     category: "Cold Brew",
     price: 3600,
-    image: new URL("../assets/coffee4.png", import.meta.url).href,
+    image: new URL("../assets/icedcoldblack.jpg", import.meta.url).href,
   },
 
   {
@@ -215,7 +215,7 @@ const products = [
     name: "Nitro Cold Brew",
     category: "Cold Brew",
     price: 4900,
-    image: new URL("../assets/coffee1.png", import.meta.url).href,
+    image: new URL("../assets/nitro.jpg", import.meta.url).href,
   },
 
   {
@@ -223,7 +223,7 @@ const products = [
     name: "Vanilla Cold Brew",
     category: "Cold Brew",
     price: 4200,
-    image: new URL("../assets/coffee2.png", import.meta.url).href,
+    image: new URL("../assets/vanillacoldbrew.webp", import.meta.url).href,
   },
 
   {
@@ -231,7 +231,7 @@ const products = [
     name: "Chocolate Cold Brew",
     category: "Cold Brew",
     price: 4500,
-    image: new URL("../assets/coffee3.png", import.meta.url).href,
+    image: new URL("../assets/chocolate.jpg", import.meta.url).href,
   },
 
   // PREMIUM
@@ -240,7 +240,7 @@ const products = [
     name: "Premium Gold Roast",
     category: "Premium",
     price: 6500,
-    image: new URL("../assets/coffee4.png", import.meta.url).href,
+    image: new URL("../assets/goldcoffee.jpg", import.meta.url).href,
   },
 
   {
@@ -248,7 +248,7 @@ const products = [
     name: "Luxury Bean Reserve",
     category: "Premium",
     price: 7200,
-    image: new URL("../assets/coffee1.png", import.meta.url).href,
+    image: new URL("../assets/Private_Reserve.webp", import.meta.url).href,
   },
 
   {
@@ -256,7 +256,7 @@ const products = [
     name: "Royal Arabica",
     category: "Premium",
     price: 8100,
-    image: new URL("../assets/coffee2.png", import.meta.url).href,
+    image: new URL("../assets/arabica.jpg", import.meta.url).href,
   },
 
   {
@@ -264,7 +264,7 @@ const products = [
     name: "Diamond Roast",
     category: "Premium",
     price: 9000,
-    image: new URL("../assets/coffee3.png", import.meta.url).href,
+    image: new URL("../assets/diamond.webp", import.meta.url).href,
   },
 
   {
@@ -272,7 +272,7 @@ const products = [
     name: "Reserve Collection",
     category: "Premium",
     price: 8500,
-    image: new URL("../assets/coffee4.png", import.meta.url).href,
+    image: new URL("../assets/Private_Reserve.webp", import.meta.url).href,
   },
 
   // CAPPUCCINO
@@ -281,7 +281,7 @@ const products = [
     name: "Classic Cappuccino",
     category: "Cappuccino",
     price: 4000,
-    image: new URL("../assets/coffee1.png", import.meta.url).href,
+    image: new URL("../assets/cappauccinoclassic.webp", import.meta.url).href,
   },
 
   {
@@ -289,7 +289,7 @@ const products = [
     name: "Chocolate Cappuccino",
     category: "Cappuccino",
     price: 4500,
-    image: new URL("../assets/coffee2.png", import.meta.url).href,
+    image: new URL("../assets/chocolatecappuccino.jpg", import.meta.url).href,
   },
 
   {
@@ -297,7 +297,7 @@ const products = [
     name: "Caramel Cappuccino",
     category: "Cappuccino",
     price: 4700,
-    image: new URL("../assets/coffee3.png", import.meta.url).href,
+    image: new URL("../assets/caramecappucl.jpg", import.meta.url).href,
   },
 
   {
@@ -305,7 +305,7 @@ const products = [
     name: "Vanilla Cappuccino",
     category: "Cappuccino",
     price: 4600,
-    image: new URL("../assets/coffee4.png", import.meta.url).href,
+    image: new URL("../assets/vanillabox.avif", import.meta.url).href,
   },
 
   {
@@ -313,7 +313,7 @@ const products = [
     name: "Premium Cappuccino",
     category: "Cappuccino",
     price: 5200,
-    image: new URL("../assets/coffee1.png", import.meta.url).href,
+    image: new URL("../assets/Capp120_3_600x.webp", import.meta.url).href,
   },
 
   // MOCHA
@@ -322,7 +322,7 @@ const products = [
     name: "Dark Mocha",
     category: "Mocha",
     price: 5300,
-    image: new URL("../assets/coffee2.png", import.meta.url).href,
+    image: new URL("../assets/darkMocha.jpg", import.meta.url).href,
   },
 
   {
@@ -330,7 +330,7 @@ const products = [
     name: "White Mocha",
     category: "Mocha",
     price: 5500,
-    image: new URL("../assets/coffee3.png", import.meta.url).href,
+    image: new URL("../assets/white mocha.png", import.meta.url).href,
   },
 
   {
@@ -338,7 +338,7 @@ const products = [
     name: "Hazelnut Mocha",
     category: "Mocha",
     price: 5700,
-    image: new URL("../assets/coffee4.png", import.meta.url).href,
+    image: new URL("../assets/hazelnut mocha.jpg", import.meta.url).href,
   },
 
   {
@@ -346,7 +346,7 @@ const products = [
     name: "Iced Mocha",
     category: "Mocha",
     price: 5000,
-    image: new URL("../assets/coffee1.png", import.meta.url).href,
+    image: new URL("../assets/Iced Mocha.webp", import.meta.url).href,
   },
 
   {
@@ -354,7 +354,7 @@ const products = [
     name: "Premium Mocha Blend",
     category: "Mocha",
     price: 6200,
-    image: new URL("../assets/coffee2.png", import.meta.url).href,
+    image: new URL("../assets/mocha blendy.webp", import.meta.url).href,
   },
 
 ]

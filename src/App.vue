@@ -149,6 +149,11 @@
       <!-- Product Section -->
       <ProductSection />
 
+      <Gallery />
+
+      <LogoSection />
+      
+      <ContactUs />
     </main>
   </div>
 </template>
@@ -158,6 +163,9 @@ import Navbar from "./components/Navbar.vue";
 import OfferSection from "./components/OfferSection.vue";
 import StatsSection from "./components/StatsSection.vue";
 import ProductSection from "./components/ProductSection.vue";
+import Gallery from "./components/Gallery.vue";
+import LogoSection from "./components/LogoSection.vue";
+import ContactUs from "./components/ContactUs.vue";
 
 export default {
   components: {
@@ -165,6 +173,9 @@ export default {
     OfferSection,
     StatsSection,
     ProductSection,
+    Gallery,
+    LogoSection,
+    ContactUs,
   },
 };
 </script>
