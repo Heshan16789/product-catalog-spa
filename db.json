@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Ethiopian Espresso",
+      "category": "Espresso",
+      "price": 3500,
+      "image": "/images/p1.png"
+    },
+    {
+      "id": 2,
+      "name": "Dark Espresso",
+      "category": "Espresso",
+      "price": 4200,
+      "image": "/images/dark.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Classic Latte",
+      "category": "Latte",
+      "price": 4100,
+      "image": "/images/classiclatte.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Cappuccino",
+      "category": "Coffee",
+      "price": 3800,
+      "image": "/images/cappuccino.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Caramel Latte",
+      "category": "Latte",
+      "price": 4500,
+      "image": "/images/caramellatte.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Vanilla Latte",
+      "category": "Latte",
+      "price": 4300,
+      "image": "/images/vanillalatte.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Mocha Coffee",
+      "category": "Coffee",
+      "price": 4700,
+      "image": "/images/mocha.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Americano",
+      "category": "Coffee",
+      "price": 3200,
+      "image": "/images/americano.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Cold Brew",
+      "category": "Cold Coffee",
+      "price": 3900,
+      "image": "/images/coldbrew.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Iced Latte",
+      "category": "Cold Coffee",
+      "price": 4200,
+      "image": "/images/icedlatte.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Hazelnut Coffee",
+      "category": "Coffee",
+      "price": 4600,
+      "image": "/images/hazelnut.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Irish Coffee",
+      "category": "Coffee",
+      "price": 5000,
+      "image": "/images/irish.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Flat White",
+      "category": "Coffee",
+      "price": 4400,
+      "image": "/images/flatwhite.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Macchiato",
+      "category": "Espresso",
+      "price": 3600,
+      "image": "/images/macchiato.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Double Espresso",
+      "category": "Espresso",
+      "price": 4800,
+      "image": "/images/doubleespresso.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Turkish Coffee",
+      "category": "Coffee",
+      "price": 3500,
+      "image": "/images/turkish.jpg"
+    },
+    {
+      "id": 17,
+      "name": "French Press",
+      "category": "Coffee",
+      "price": 3700,
+      "image": "/images/frenchpress.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Affogato",
+      "category": "Dessert Coffee",
+      "price": 5200,
+      "image": "/images/affogato.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Spanish Latte",
+      "category": "Latte",
+      "price": 4600,
+      "image": "/images/spanishlatte.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Matcha Latte",
+      "category": "Tea",
+      "price": 4000,
+      "image": "/images/matcha.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Chai Latte",
+      "category": "Tea",
+      "price": 3500,
+      "image": "/images/chai.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Coconut Coffee",
+      "category": "Coffee",
+      "price": 4300,
+      "image": "/images/coconutcoffee.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Chocolate Mocha",
+      "category": "Coffee",
+      "price": 4900,
+      "image": "/images/chocolatemocha.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Espresso Romano",
+      "category": "Espresso",
+      "price": 3800,
+      "image": "/images/roman.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Pumpkin Spice Latte",
+      "category": "Latte",
+      "price": 5500,
+      "image": "/images/pumpkin.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Blueberry Coffee",
+      "category": "Special",
+      "price": 5300,
+      "image": "/images/blueberry.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Caramel Macchiato",
+      "category": "Coffee",
+      "price": 5100,
+      "image": "/images/caramelmacchiato.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Premium Arabica",
+      "category": "Special",
+      "price": 6000,
+      "image": "/images/arabica.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Colombian Coffee",
+      "category": "Coffee",
+      "price": 4700,
+      "image": "/images/colombian.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Brazilian Roast",
+      "category": "Coffee",
+      "price": 4500,
+      "image": "/images/brazilian.jpg"
+    }
+  ]
+}

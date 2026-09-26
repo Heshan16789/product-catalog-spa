@@ -19,7 +19,8 @@
         roasted to perfection in every single cup.
       </p>
 
-      <button class="btn-shop">SHOP HERE</button>
+      <!-- Click event triggers DOM manipulation -->
+      <button class="btn-shop" @click="scrollToShop">SHOP HERE</button>
 
       <Navbar />
     </header>
@@ -29,8 +30,8 @@
 
       <OfferSection />
 
-      <!-- Coffee Herald Section -->
-      <section class="w-full bg-[#f2e8da] py-12 px-6">
+      <!-- Coffee Herald Section (Target for About Us) -->
+      <section id="about-us" class="w-full bg-[#f2e8da] py-12 px-6">
 
         <div class="w-full flex justify-center pt-12">
           <span
@@ -177,6 +178,14 @@ export default {
     LogoSection,
     ContactUs,
   },
+  methods: {
+    scrollToShop() {
+      const shopTarget = document.getElementById("product-section");
+      if (shopTarget) {
+        shopTarget.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  },
 };
 </script>
 
@@ -281,7 +290,6 @@ body {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-
   .hero {
     height: 100vh;
     background-image: url('./assets/hero-mobile.jpg');
